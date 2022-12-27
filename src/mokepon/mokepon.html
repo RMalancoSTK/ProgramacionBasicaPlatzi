@@ -22,28 +22,42 @@
     <section id="seleccionar-mascota">
         <h2>Selecciona tu mascota</h2>
         <p>Elige una mascota para tu juego</p>
-        <!-- MASCOTAS -->
+        <select id="mascotas">
+            <option value="1">Hipoge 🌊</option>
+            <option value="2">Capipepo 🌳</option>
+            <option value="3">Ratigueya 🔥</option>
+            <option value="4">Langostelvis 🔥 y 🌊</option>
+            <option value="5">Tucapalma 🌊 y 🌳</option>
+            <option value="6">Pydos 🌳 y 🔥</option>
+        </select>
         <button id="seleccionar">Seleccionar</button>
     </section>
 
     <section id="seleccionar-ataque">
         <h2>Selecciona tu ataque</h2>
         <p>Elige un ataque para tu mascota</p>
-        <button id="ataque1">Fuego 🔥</button>
-        <button id="ataque2">Agua 🌊</button>
-        <button id="ataque3">Tierra 🌳</button>
+        <!-- <button id="fuego">Fuego 🔥</button>
+        <button id="agua">Agua 🌊</button>
+        <button id="tierra">Tierra 🌳</button> -->
+        <select id="ataques">
+            <option value="1">Fuego 🔥</option>
+            <option value="2">Agua 🌊</option>
+            <option value="3">Tierra 🌳</option>
+        </select>
+        <button id="seleccionar-ataque">Seleccionar</button>
     </section>
 
     <section id="estadisticas-tu-mascota">
         <h2>Estadisticas de tu mascota</h2>
-        <p>Estas son las estadisticas de tu mascota</p>
-        <p id="vidas-mascota">Vidas: <span>3</span></p>
+        <p>Estas son las estadisticas de tu mascota: <span id="nombre-mascota">Selecciona un mascota</span></p>
+        <p id="vidas-mascota">Vidas: <span id="vidas-mascota-span">0</span></p>
     </section>
 
     <section id="estadisticas-mascota-enemiga">
         <h2>Estadisticas de la mascota enemiga</h2>
-        <p>Estas son las estadisticas de la mascota enemiga</p>
-        <p id="vidas-mascota-enemiga">Vidas: <span>3</span></p>
+        <p>Estas son las estadisticas de la mascota enemiga: <span id="nombre-mascota-enemiga">Selecciona un
+                mascota</span></p>
+        <p id="vidas-mascota-enemiga">Vidas: <span id="vidas-mascota-enemiga-span">0</span></p>
     </section>
 
     <section id="resultado">
@@ -51,9 +65,8 @@
         <p id="resultado-texto"></p>
         <button id="reiniciar">Reiniciar</button>
     </section>
-
-
-
 </body>
+
+<script src="../js/mokepon.js"></script>
 
 </html>
